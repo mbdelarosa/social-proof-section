@@ -6,6 +6,11 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>Frontend Mentor | Social proof section</title>
   </head>
@@ -19,34 +24,76 @@
         </p>
         
         <div class="section-ratings">
-          <div class="rating">Rated 5 Stars in Reviews</div>
-          <div class="rating">Rated 5 Stars in Report Guru</div>
-          <div class="rating">Rated 5 Stars in BestTech</div>
+          <div class="rating-card">
+            <div class="rating-stars">
+              <img src="images/icon-star.svg" class="icon-star" alt="" />
+              <img src="images/icon-star.svg" class="icon-star" alt="" />
+              <img src="images/icon-star.svg" class="icon-star" alt="" />
+              <img src="images/icon-star.svg" class="icon-star" alt="" />
+              <img src="images/icon-star.svg" class="icon-star" alt="" />
+            </div>
+            <p class="rating-title">Rated 5 Stars in Reviews</p>
+          </div>
+          <div class="rating-card">
+            <div class="rating-stars">
+              <img src="images/icon-star.svg" class="icon-star" alt="" />
+              <img src="images/icon-star.svg" class="icon-star" alt="" />
+              <img src="images/icon-star.svg" class="icon-star" alt="" />
+              <img src="images/icon-star.svg" class="icon-star" alt="" />
+              <img src="images/icon-star.svg" class="icon-star" alt="" />
+            </div>
+            <p class="rating-title">Rated 5 Stars in Report Guru</p>
+          </div>
+          <div class="rating-card">
+            <div class="rating-stars">
+              <img src="images/icon-star.svg" class="icon-star" alt="" />
+              <img src="images/icon-star.svg" class="icon-star" alt="" />
+              <img src="images/icon-star.svg" class="icon-star" alt="" />
+              <img src="images/icon-star.svg" class="icon-star" alt="" />
+              <img src="images/icon-star.svg" class="icon-star" alt="" />
+            </div>
+            <p class="rating-title">Rated 5 Stars in BestTech</p>
+          </div>
         </div>
         
         <div class="section-customers">
           <div class="customer-card">
-            <h2 class="customer-name">Colton Smith</h2>
-            <p class="customer-verified">Verified Buyer</p>
-            <p class="customer-text">
-              "We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"
-            </p>
+            <div class="customer-details">
+              <img src="images/image-colton.jpg" class="customer-icon" alt="" />
+              <hgroup class="customer-text">
+                <h2 class="customer-name">Colton Smith</h2>
+                <p class="customer-verified">Verified Buyer</p>
+              </hgroup>
+            </div>
+            <q class="customer-quote">
+              We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!
+            </q>
           </div>
           
           <div class="customer-card">
-            <h2 class="customer-name">Irene Roberts</h2>
-            <p class="customer-verified">Verified Buyer</p>
-            <p class="customer-text">
-              "Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."
-            </p>
+            <div class="customer-details">
+              <img src="images/image-irene.jpg" class="customer-icon" alt="" />
+              <hgroup class="customer-text">
+                <h2 class="customer-name">Irene Roberts</h2>
+                <p class="customer-verified">Verified Buyer</p>
+              </hgroup>
+            </div>
+            <q class="customer-quote">
+              Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery.
+            </q>
           </div>
           
           <div class="customer-card">
-            <h2 class="customer-name">Anne Wallace</h2>
-            <p class="customer-verified">Verified Buyer</p>
-            <p class="customer-text">
-              "Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"
-            </p>
+            <div class="customer-details">
+              <img src="images/image-anne.jpg" class="customer-icon" alt="" />
+              <hgroup class="customer-text">
+                <h2 class="customer-name">Anne Wallace</h2>
+                <p class="customer-verified">Verified Buyer</p>
+              </hgroup>
+            </div>
+            <q class="customer-quote">
+              Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!
+            </q>
           </div>
         </div>
       </section>
