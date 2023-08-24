@@ -26,8 +26,7 @@ main {
 
 .social-proof-section {
   margin: 5rem 1.175rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 3rem;
 }
 
@@ -36,6 +35,7 @@ main {
   font-weight: 700;
   line-height: 2rem;
   color: var(--very-dark-magenta);
+  margin-bottom: 1.75rem;
 }
 
 .section-text {
@@ -71,8 +71,7 @@ main {
 }
 
 .section-customers {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1rem;
 }
 
@@ -111,4 +110,27 @@ main {
 .customer-quote {
   font-weight: 400;
   font-size: 1.05rem;
+}
+
+@media only screen and (min-width: 50rem) {
+  body {
+    background: url('./images/bg-pattern-top-desktop.svg') left top no-repeat, url('./images/bg-pattern-bottom-desktop.svg') right bottom no-repeat;
+    background-color: var(--white);
+  }
+
+  .social-proof-section {
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-details {
+    text-align: left;
+  }
+
+  .section-customers {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
